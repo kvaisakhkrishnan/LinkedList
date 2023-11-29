@@ -70,5 +70,41 @@ public class LinkedList<T extends Comparable<T>> {
 			tempNode.next = null;
 		}
 	}
+	void searchElement(T element) {
+		if(head == null) {
+			System.out.println("Empty List");
+		}
+		Node<T> tempHead = head;
+		while(tempHead.next != null) {
+			if(tempHead.data.equals(element)) {
+				System.out.println("Element Found");
+				tempHead = tempHead.next;
+			}
+		}
+	}
+	void deleteElement(T element) {
+		if(head == null) {
+			System.out.println("Empty List");
+		}
+		else {
+			Node<T> tempHead = head;
+			if(head.data.equals(element)) {
+				head = null;
+				System.out.println("Size is : 0");
+			}
+			else {
+				int count = 1;
+				boolean flag = false;
+				while(tempHead.next != null) {
+					if(tempHead.next.data.equals(element) && flag == false) {
+						tempHead.next = tempHead.next.next;
+						flag = true;
+					}
+					count += 1;
+				}
+				System.out.println("Size is : " + (count - 1));
+			}
+		}
+	}
 
 }

@@ -12,6 +12,15 @@ public class Driver {
 		intLinkedList.printSequence();
 		intLinkedList.deleteLast();
 		intLinkedList.printSequence();
-
+		intLinkedList.searchElement(30);
+		intLinkedList.deleteElement(10);
+		intLinkedList.printSequence();
+		
+		OrderedLinkedList<Integer> orderedList = new OrderedLinkedList<>();
+		orderedList.addElement(56);
+		orderedList.addElement(30);
+		orderedList.addElement(40);
+		orderedList.addElement(70);
+		orderedList.showElements();
 	}
 }
