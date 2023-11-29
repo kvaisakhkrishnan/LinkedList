@@ -6,5 +6,7 @@ public class Driver {
 		intLinkedList.addElement(30);
 		intLinkedList.addElement(56);
 		intLinkedList.printSequence();
+		intLinkedList.addElementAfter(10, 30);
+		intLinkedList.printSequence();
 	}
 }
