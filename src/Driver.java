@@ -10,5 +10,8 @@ public class Driver {
 		intLinkedList.printSequence();
 		intLinkedList.pop();
 		intLinkedList.printSequence();
+		intLinkedList.deleteLast();
+		intLinkedList.printSequence();
+
 	}
 }
