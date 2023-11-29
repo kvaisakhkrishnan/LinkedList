@@ -43,5 +43,16 @@ public class LinkedList<T extends Comparable<T>> {
 			}
 		}
 	}
+	
+	void pop() {
+		if(head == null) {
+			System.out.println("Empty List");
+		}
+		else {
+			Node<T> tempNode = head;
+			head = head.next;
+			tempNode.next = null;
+		}
+	}
 
 }

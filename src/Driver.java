@@ -8,5 +8,7 @@ public class Driver {
 		intLinkedList.printSequence();
 		intLinkedList.addElementAfter(10, 30);
 		intLinkedList.printSequence();
+		intLinkedList.pop();
+		intLinkedList.printSequence();
 	}
 }
